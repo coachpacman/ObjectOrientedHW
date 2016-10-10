@@ -41,10 +41,22 @@ function expect(target) {
 // ????????
 
 var Dog = {
-  status:'normal'
+  status:'normal',
+  color: null,
+  hungry: true,
 };
 
 var sadie = Object.create(Dog)
+
+sadie.color = "black"
+
+var moonshine = Object.create(Dog)
+
+sadie.hungry = false
+
+var atticus = Object.create(Dog)
+
+sadie.owner = mason 
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
@@ -55,10 +67,20 @@ var sadie = Object.create(Dog)
 var Human = {
   pet: function(dog) {
     dog.status = 'happy'
-  }
+
+  },
+  feed: function(dog) {
+    dog.hungry = false
+  },
+
+  cool: true
+
 }
 
+
 var mason = Object.create(Human)
+var julia = Object.create(Human)
+mason.cool = false
 
 // ????????
 // ????????
